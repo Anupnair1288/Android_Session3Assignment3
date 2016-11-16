@@ -1,0 +1,20 @@
+<resources>
+    <!--TextView String-->
+    <string name="app_name">Creditcard app</string>
+    <string name="tvstringa_cbal">Enter Card Balance($)</string>
+    <string name="tvstring_interest">Enter Yearly Interest Rate(%)</string>
+    <string name="tvstring_min_pay">Enter Minimum Payment($)</string>
+    <string name="tvstring_fin_bal">Final Card Balance($)</string>
+    <string name="tvstring_months_rem">Months Remaining</string>
+    <string name="tvstring_interest_paid">Interest Paid Will Be</string>
+    <!--Edit text String-->
+    <string name="etstring_cbal"><font size="10">Enter Balance($)</font></string>
+    <string name="etstring_interest"><font size="10">Interest Rate(%)</font></string>
+    <string name="etstring_min_pay"><font size="10">Minimum Payment($)</font></string>
+    <string name="etstring_fin_bal"><font size="10">Card Balance($)</font></string>
+    <string name="etstring_months_rem"><font size="10">Months Remaining</font></string>
+    <string name="etstring_interest_paid"><font size="10">Interest Paid Will Be shown here</font></string>
+    <!--Button-->
+    <string name="button_compute">COMPUTE</string>
+    <string name="button_clear">CLEAR</string>
+</resources>

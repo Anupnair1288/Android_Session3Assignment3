@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#544b2b"
+    tools:context="com.android.anup.creditcardapp.MainActivity">
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="72%"
+        app:layout_widthPercent="3%"
+        android:id="@+id/separator"
+        android:layout_toEndOf="@+id/tv_card_bal" />
+
+    <TextView
+        android:id="@+id/tv_card_bal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstringa_cbal"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+
+    <EditText
+        android:id="@+id/et_card_bal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@id/tv_card_bal"
+        android:layout_alignParentEnd="true"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_cbal"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_interest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_below="@+id/tv_card_bal"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstring_interest"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_interest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:layout_toEndOf="@+id/tv_interest"
+        android:layout_below="@+id/et_card_bal"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_interest"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_min_pay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_below="@+id/tv_interest"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstring_min_pay"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_min_pay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:layout_toEndOf="@+id/tv_min_pay"
+        android:layout_below="@+id/et_interest"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_min_pay"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_final_bal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_below="@+id/tv_min_pay"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstring_fin_bal"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_final_bal"
+        android:inputType="none"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:layout_toEndOf="@+id/tv_final_bal"
+        android:layout_below="@+id/et_min_pay"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_fin_bal"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_month_rem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_below="@+id/tv_final_bal"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstring_months_rem"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_month_rem"
+        android:inputType="none"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:layout_toEndOf="@+id/tv_month_rem"
+        android:layout_below="@+id/et_final_bal"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_months_rem"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_int_paid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="59%"
+        android:layout_below="@+id/tv_month_rem"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:background="@drawable/border_textview"
+        android:text="@string/tvstring_interest_paid"
+        android:textSize="16sp"
+        android:gravity="fill"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_int_paid"
+        android:inputType="none"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="38%"
+        android:layout_toEndOf="@+id/tv_int_paid"
+        android:layout_below="@+id/et_month_rem"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/etstring_interest_paid"
+        android:gravity="center"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/but_comput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="95%"
+        android:text="@string/button_compute"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/border_button"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+        android:layout_above="@+id/but_clear"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/but_clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="95%"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_clear"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/border_button"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp" />
+
+</android.support.percent.PercentRelativeLayout>
